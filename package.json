@@ -1,0 +1,47 @@
+{
+  "name": "@tadashi/request",
+  "version": "1.0.0",
+  "description": "Request library for Node.js",
+  "type": "module",
+  "main": "src/request.js",
+  "exports": {
+    ".": "./src/request.js"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "eslint": "eslint --ignore-path .gitignore .",
+    "lint": "prettier --check . && npm run eslint",
+    "format": "prettier --write .",
+    "pretest": "npm run lint",
+    "test": "c8 --reporter=text --reporter=text-summary --reporter=lcovonly node --test test/*.spec.js"
+  },
+  "keywords": [
+    "got",
+    "request",
+    "helper"
+  ],
+  "author": "Thiago Lagden",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@tadashi/common": "4.2.1",
+    "got": "14.0.0"
+  },
+  "devDependencies": {
+    "@tadashi/hex-id": "3.0.2",
+    "c8": "9.1.0",
+    "eslint": "8.56.0",
+    "eslint-plugin-sonarjs": "0.23.0",
+    "eslint-plugin-unicorn": "50.0.1",
+    "hash-to-port": "1.2.0",
+    "http-errors": "2.0.0",
+    "prettier": "3.2.2",
+    "uWebSockets.js": "https://github.com/uNetworking/uWebSockets.js/archive/v20.39.0.tar.gz"
+  }
+}
