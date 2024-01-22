@@ -1,15 +1,23 @@
-*.css
-.*
+# Dir
+.conf
+.github
+.vite
 bin
-build
 coverage
 dist
+logs
 node_modules
-package
-# template.js
-vite.config.js.timestamp-*
+resource
+test/snapshots
 
-# Ignore files for PNPM, NPM and YARN
-pnpm-lock.yaml
-package-lock.json
-yarn.lock
+# File
+*.css
+*.html
+*-lock.*
+*.lock
+*.log
+*.log*
+.registry-*
+_cleanup
+_init
+vite.config.js.timestamp-*

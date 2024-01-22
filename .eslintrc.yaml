@@ -27,18 +27,16 @@ rules:
   no-undef-init: off
   no-unused-expressions:
     - error
-    -
-      allowShortCircuit: true
+    - allowShortCircuit: true
       allowTernary: true
       allowTaggedTemplates: true
   padding-line-between-statements: off
   quotes: [error, single]
   # require-atomic-updates: off
-  semi:  [error, never]
+  semi: [error, never]
   semi-spacing:
     - error
-    -
-      before: false
+    - before: false
       after: true
   spaced-comment: off
   # unicorn/consistent-destructuring: off
@@ -61,7 +59,3 @@ rules:
   # unicorn/prefer-object-from-entries: off
   unicorn/prefer-query-selector: off
   unicorn/prevent-abbreviations: off
-
-  # sonarjs/prefer-object-literal: off
-  # no-unused-vars: off
-  # unicorn/no-process-exit: off
