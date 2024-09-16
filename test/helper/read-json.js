@@ -1,3 +1,5 @@
+import { Buffer } from 'node:buffer'
+
 /* Helper function for reading a posted JSON body */
 function readJson(res, cb, err) {
 	let buffer
