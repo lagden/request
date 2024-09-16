@@ -1,8 +1,6 @@
 # Request
 
-[![NPM version][npm-img]][npm]
-[![Build Status][ci-img]][ci]
-[![Coverage Status][coveralls-img]][coveralls]
+[![NPM version][npm-img]][npm] [![Build Status][ci-img]][ci] [![Coverage Status][coveralls-img]][coveralls]
 
 [npm-img]: https://img.shields.io/npm/v/@tadashi/request.svg
 [npm]: https://www.npmjs.com/package/@tadashi/request
@@ -34,9 +32,11 @@ const obj = await request('https://registry.npmjs.org/@tadashi/request/latest')
 
 [<img src="https://avatars.githubusercontent.com/u/130963?s=390" alt="Lagden" width="90">](https://github.com/lagden)
 
-## Donate ❤️
+---
 
-- BTC: bc1q7famhuj5f25n6qvlm3sssnymk2qpxrfwpyq7g4
+> [!IMPORTANT]\
+> Buy me a coffee!\
+> BTC: `bc1q7famhuj5f25n6qvlm3sssnymk2qpxrfwpyq7g4`
 
 ## License
 

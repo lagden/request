@@ -1,48 +1,52 @@
 {
-  "name": "@tadashi/request",
-  "version": "1.0.0",
-  "description": "Request library for Node.js",
-  "type": "module",
-  "main": "src/request.js",
-  "exports": {
-    ".": "./src/request.js"
-  },
-  "files": [
-    "src",
-    "LICENSE",
-    "README.md"
-  ],
-  "scripts": {
-    "eslint": "eslint .",
-    "check": "prettier --check .",
-    "format": "prettier --write .",
-    "pretest": "run-s check eslint",
-    "test": "c8 --reporter=text-summary --reporter=lcovonly --reporter=cobertura node --test test/*.spec.js"
-  },
-  "keywords": [
-    "lib",
-    "request",
-    "helper"
-  ],
-  "author": "Thiago Lagden",
-  "license": "MIT",
-  "engines": {
-    "node": ">=18"
-  },
-  "dependencies": {
-    "@tadashi/common": "4.2.1",
-    "got": "14.0.0"
-  },
-  "devDependencies": {
-    "@tadashi/hex-id": "3.0.2",
-    "c8": "9.1.0",
-    "eslint": "8.56.0",
-    "eslint-plugin-sonarjs": "0.23.0",
-    "eslint-plugin-unicorn": "50.0.1",
-    "npm-run-all": "4.1.5",
-    "hash-to-port": "1.2.0",
-    "http-errors": "2.0.0",
-    "prettier": "3.2.4",
-    "uWebSockets.js": "https://github.com/uNetworking/uWebSockets.js/archive/v20.39.0.tar.gz"
-  }
+	"name": "@tadashi/request",
+	"version": "1.1.0",
+	"description": "Request library for Node.js",
+	"keywords": [
+		"lib",
+		"request",
+		"helper"
+	],
+	"author": "Thiago Lagden",
+	"license": "MIT",
+	"engines": {
+		"node": ">=18"
+	},
+	"type": "module",
+	"files": [
+		"src",
+		"types",
+		"LICENSE",
+		"README.md"
+	],
+	"main": "./src/request.js",
+	"types": "./types/request.d.ts",
+	"exports": {
+		".": {
+			"import": "./src/request.js",
+			"types": "./types/request.d.ts"
+		}
+	},
+	"scripts": {
+		"tsc": "tsc",
+		"lint": "deno lint",
+		"check": "deno fmt --check",
+		"format": "deno fmt",
+		"pretest": "run-s check lint",
+		"test": "c8 --reporter=text-summary --reporter=lcovonly --reporter=cobertura node --test test/*.spec.js"
+	},
+	"dependencies": {
+		"@tadashi/common": "4.6.0",
+		"got": "14.4.2"
+	},
+	"devDependencies": {
+		"@types/got": "9.6.12",
+		"@types/node": "22.5.5",
+		"c8": "10.1.2",
+		"npm-run-all": "4.1.5",
+		"hash-to-port": "1.2.0",
+		"http-errors": "2.0.0",
+		"typescript": "5.6.2",
+		"uWebSockets.js": "https://github.com/uNetworking/uWebSockets.js/archive/v20.48.0.tar.gz"
+	}
 }
